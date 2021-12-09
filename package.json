@@ -4,8 +4,7 @@
   "description": "simple invoice-app",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -13,6 +12,9 @@
   },
   "author": "Mustaffa",
   "license": "ISC",
+    "engines": {
+    "node": "16.13.0"
+  },
   "bugs": {
     "url": "https://github.com/Mustaffa96/node-invoice/issues"
   },
