@@ -162,7 +162,7 @@ function formatDate(date) {
 
   return year + "/" + month + "/" + day;
 }
-app.get("/postdata", (req, res) => {
+app.get("/", (req, res) => {
     var invoice=JSON.parse(req.body.data);
     //console.log(invoice);
     let doc = new PDFDocument({ size: "A4", margin: 50 });
