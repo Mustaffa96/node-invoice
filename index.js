@@ -5,7 +5,7 @@ const fs = require("fs");
 const PDFDocument = require("pdfkit");
 var nodemailer = require('nodemailer');
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
@@ -152,7 +152,7 @@ function generateHr(doc, y) {
 }
 
 function formatCurrency(cents) {
-  return "Rs " +cents;
+  return "RM " +cents;
 }
 
 function formatDate(date) {
