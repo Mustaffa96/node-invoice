@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 function generateHeader(doc) {
   doc
-    .image("https://scontent.fkul8-1.fna.fbcdn.net/v/t1.18169-9/943746_995715853850023_7769952618801143186_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=bvWVfx83iKIAX-RChEm&_nc_ht=scontent.fkul8-1.fna&oh=62c68f055b556c6b404f291bba31f897&oe=61D55F46", 50, 45, { width: 100 })
+    .image("logo.jpg", 50, 45, { width: 100 })
     .fillColor("#444444")
     .fontSize(10)
     .text("Pied Piper Inc.", 200, 50, { align: "right" })
