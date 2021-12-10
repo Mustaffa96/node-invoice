@@ -14,9 +14,9 @@ function generateHeader(doc) {
     .image("logo.jpg", 50, 45, { width: 100 })
     .fillColor("#444444")
     .fontSize(10)
-    .text("Pied Piper Inc.", 200, 50, { align: "right" })
-    .text("5230,Newell Road", 200, 65, { align: "right" })
-    .text("Palo Alto,California", 200, 80, { align: "right" })
+    .text("Persatuan Mahasiswa Hadhari", 200, 50, { align: "right" })
+    .text("Seksyen 7,43000", 200, 65, { align: "right" })
+    .text("Shah Alam,Selangor", 200, 80, { align: "right" })
     .moveDown();
 }
 
@@ -152,7 +152,7 @@ function generateHr(doc, y) {
 }
 
 function formatCurrency(cents) {
-  return "Rs " +cents;
+  return "RM " +cents;
 }
 
 function formatDate(date) {
@@ -174,13 +174,13 @@ app.get("/", (req, res) => {
       var mail = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-          user: 'your-mail',
-          pass: 'your-pass'
+          user: 'syahamahnewgen2020@gmail.com',
+          pass: 'wujudbilamakanwazaman'
         }
       });
       res.download(__dirname+"/invoice.pdf");
         var mailOptions = {
-          from: 'your-mail',
+          from: 'syahamahnewgen2020@gmail.com',
           to: invoice.cmail,
           subject: 'Invoice-'+invoice.invoice_nr,
           text: 'Thanks for your business with us! Find the invoice attached with this mail and the payment is due within 10 days \n\nThanks and Regards,\nPied Piper Inc.',
