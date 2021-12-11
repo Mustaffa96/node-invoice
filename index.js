@@ -14,7 +14,7 @@ function generateHeader(doc) {
     .image("logo.jpg", 50, 45, { width: 100 })
     .fillColor("#444444")
     .fontSize(10)
-    .text("Persatuan Mahasiswa Hadhari", 200, 50, { align: "right" })
+    .text("Moose Store Inc.", 200, 50, { align: "right" })
     .text("Seksyen 7,43000", 200, 65, { align: "right" })
     .text("Shah Alam,Selangor", 200, 80, { align: "right" })
     .moveDown();
@@ -115,7 +115,7 @@ function generateFooter(doc) {
   doc
     .fontSize(10)
     .text(
-      "Payment is due within 10 days. Thank you for your business.",
+      "Payment is due within 7 days. Thank you for your business.",
       50,
       780,
       { align: "center", width: 500 }
